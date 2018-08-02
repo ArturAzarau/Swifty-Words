@@ -10,16 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - Outlets
+    
+    @IBOutlet var cluesLabel: UILabel!
+    @IBOutlet var answersLabel: UILabel!
+    @IBOutlet var currentAnswer: UITextField!
+    @IBOutlet var scoreLabel: UILabel!
+    
+    // MARK: - Properties
+    
+    private var letterButtons = [UIButton]()
+    private var activatedButtons = [UIButton]()
+    private var solutions = [String]()
+    
+    private var score = 0
+    private var level = 1
+    
+    // MARK: - Actions
+    
+    @IBAction func submitTapped(_ sender: Any) {
+    }
+    
+    @IBAction func clearTapped(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
